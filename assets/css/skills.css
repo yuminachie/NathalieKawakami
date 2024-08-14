@@ -1,4 +1,4 @@
-.skill-overlay{
+.skills-overlay{
     background-color: var(--foreground);
     height: 10rem;
 }
@@ -44,4 +44,37 @@
 .skill-icon img{
     width: 4rem;
     height: 4rem;
+}
+
+.skill-title{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+.skill-desc{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
+.skill-sub{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: var(--foreground);
+}
+
+.skill-text{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
+@media(width>600px){
+    .skills .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skills .skill{
+        border-bottom: 0;
+        border-right: 1px solid var(--primary-light);
+    }
 }
